@@ -203,6 +203,15 @@ a {
 .foot-lnk {
 	text-align: center;
 }
+
+#message{
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    color: white;
+    padding: 5px 0;
+}
+
 </style>
 <title>Login</title>
 </head>
@@ -328,7 +337,7 @@ a {
 							<%
 								if(request.getAttribute("rmsg") != null){
 									%>
-									<p><%=request.getAttribute("rmsg")%><p>
+									<p id="message"><%=request.getAttribute("rmsg")%><p>
 									<%
 								}
 							%>
